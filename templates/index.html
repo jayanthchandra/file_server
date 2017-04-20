@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="generator" content="Bootstrap Listr">
-  <title>File System</title>
+  <title>Ground Station - File System</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/listr.pack.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/jquery.filer.css')}}">
 </head>
 <body dir="ltr">
   <div class="container">
@@ -27,11 +29,6 @@
       <div class="pull-sm-right">
         <div class="btn-group">
           <a data-toggle="modal" data-target="#uploader-modal" class="btn btn-secondary text-muted">Upload</a>
-          {% if hide_dotfile == 'yes' %}
-          <a href="?hide-dotfile=no" class="btn btn-secondary text-muted">Show Dotfiles</a>
-          {% else %}
-          <a href="?hide-dotfile=yes" class="btn btn-secondary text-muted">Hide Dotfiles</a>
-          {% endif %}
         </div>
       </div>
     </div>
